@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-top-headings',
@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-headings.component.scss'],
 })
 export class TopHeadingsComponent  implements OnInit {
+    
+title = input<string>('');
+// using the new way Angular Signals - modern angular Input 
+// @input()name?:string;
+
+name = input <string>('');
+
 
   constructor() { }
 

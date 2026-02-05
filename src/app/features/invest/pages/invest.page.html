@@ -1,17 +1,9 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-     Dashboard
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="invest">
+  <div class="container">
+    <app-top-headings title="Dashboard"></app-top-headings>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <app-sub-headings subheadings="Holdings"></app-sub-headings>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+     <app-sub-headings subheadings="Trending stocks"></app-sub-headings>
+  </div>
 </ion-content>
